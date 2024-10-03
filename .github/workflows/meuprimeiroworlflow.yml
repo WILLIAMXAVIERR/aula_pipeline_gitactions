@@ -1,0 +1,25 @@
+name: Primeiro Workflow
+
+on:
+
+  push:
+    branches:
+      - develop
+      - main
+      - master
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  Primeiro-Fluxo:
+
+    name: Job 1 
+    runs-on: ubunto-latest
+    steps:  
+      - name: Passo 1
+        run: echo "Executando o primeiro passo"
+      - name: Passo 2
+        run: echo "Executando o segundo passo"
+      - name: Passo 3
+        run: echo "Executando o terceiro passo"
+ 
