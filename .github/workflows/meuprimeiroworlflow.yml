@@ -35,7 +35,7 @@ jobs:
       - name: Passo 2
         run: echo "Executando o quinto passo"
       - name: Passo 3
-        run: echo "Executando o sexto passo"
+        run: echo "Passo falha" | Exit 1
         
   Terceiro-Fluxo:
 
